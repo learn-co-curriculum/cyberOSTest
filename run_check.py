@@ -5,7 +5,8 @@ import platform
 import pip
 
 def install(package):
-    pip.main(['install', package])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
 # Detect the operating system
 os_type = platform.system()
 
