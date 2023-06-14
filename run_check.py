@@ -15,10 +15,8 @@ def install(package):
 os_type = platform.system()
 
 if os_type == 'Darwin':  # Mac OS
-    # Install dependencies
-    #subprocess.run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements_mac.txt'], check=True)
     # Run the Python script
-   # ANSI color codes
+    # ANSI color codes
     NC = '\033[0m'
     RED = '\033[0;31m'
     GREEN = '\033[0;32m'
