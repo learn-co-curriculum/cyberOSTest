@@ -18,7 +18,6 @@ elif os_type in ['Windows']:  # Windows
     # Install dependencies
     install('colorama')
     install('psutil')
-    install('platform')
     # Run the Python script
     from colorama import init, Fore, Style
     import platform
