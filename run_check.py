@@ -2,11 +2,10 @@ import os
 import subprocess
 import sys
 import platform
+import pip
 
-# Clone the repository
-subprocess.run(['git', 'clone', 'https://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@github.com/learn-co-curriculum/cyberOSTest.git'], check=True)
-os.chdir('cyberOSTest')
-
+def install(package):
+    pip.main(['install', package])
 # Detect the operating system
 os_type = platform.system()
 
@@ -17,7 +16,9 @@ if os_type == 'Darwin':  # Mac OS
     subprocess.run([sys.executable, 'check_mac.py'], check=True)
 elif os_type in ['Windows']:  # Windows
     # Install dependencies
-    subprocess.run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements_windows.txt'], check=True)
+    install('colorama')
+    install('psutil')
+    install('platform')
     # Run the Python script
     from colorama import init, Fore, Style
     import platform
