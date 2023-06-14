@@ -4,7 +4,12 @@ import sys
 import platform
 
 def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", package])
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to install {package}.")
+        raise e
+
 
 # Detect the operating system
 os_type = platform.system()
