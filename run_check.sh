@@ -12,7 +12,7 @@ elif [[ "${os}" == "MINGW"* ]] || [[ "${os}" == "MSYS"* ]] || [[ "${os}" == "Win
     # Install dependencies
     pip install -r requirements_windows.txt
     # Run the Python script
-    python check_windows.py
+    python3 check_windows.py
 else
     echo "Unsupported operating system: ${os}"
 fi
