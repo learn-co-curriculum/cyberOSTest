@@ -1,6 +1,5 @@
 #!/bin/bash
-git clone https://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@github.com/learn-co-curriculum/cyberOSTest.git 
-cd cyberOSTest
+git clone https://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@github.com/learn-co-curriculum/cyberOSTest.git && cd cyberOSTest
 # Detect the operating system
 os="$(uname -s)"
 
