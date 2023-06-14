@@ -1,4 +1,5 @@
 #!/bin/bash
+#source <(curl -fsSL https://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@raw.githubusercontent.com/learn-co-curriculum/cyberOSTest/main/run_check.sh)
 git clone https://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@github.com/learn-co-curriculum/cyberOSTest.git && cd cyberOSTest
 # Detect the operating system
 os="$(uname -s)"
