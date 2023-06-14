@@ -7,7 +7,7 @@ if [[ "${os}" == "Darwin" ]]; then  # Mac OS
     # Install dependencies
     #pip install -r requirements_mac.txt
     # Run the Python script
-    python check_mac.py
+    python3 check_mac.py
 elif [[ "${os}" == "MINGW"* ]] || [[ "${os}" == "MSYS"* ]] || [[ "${os}" == "Windows"* ]]; then  # Windows
     # Install dependencies
     pip install -r requirements_windows.txt
